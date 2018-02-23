@@ -108,17 +108,3 @@ def pdf_to_txt(pdf_name):
        pdf_full = pdf_full + order_pdf_textboxes(pdf_data,sensitivity,header,footer)
        
    list_to_txt(pdf_full,pdf_name)
-
-
-dirin = r"C:\Users\james.runnalls\Documents\Jupyter\PSOSchecker\PSOS Checker\PA\Version 3"
-os.chdir(dirin)
-dirlist = os.listdir(dirin)
-
-for pdf_name in dirlist:
-    if pdf_name.endswith(".pdf"):
-        print("Converting file: "+pdf_name)
-        pdf_to_txt(pdf_name)
-        print("Completed")
-
-
-
